@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mmrag"
+version = "0.1.0"
+description = "A multi-agent GitHub knowledge RAG project for repository docs, issues, and pull requests."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.12"
+authors = [
+  { name = "OpenAI Codex" }
+]
+dependencies = [
+  "fastapi>=0.115.0",
+  "langgraph>=0.2.20",
+  "pydantic>=2.7.0",
+  "uvicorn>=0.30.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0.0",
+]
+
+[project.scripts]
+mmrag = "mmrag.cli.main:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+mmrag = ["evals/*.json"]
+

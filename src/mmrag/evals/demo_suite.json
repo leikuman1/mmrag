@@ -1,0 +1,33 @@
+[
+  {
+    "case_id": "demo-01",
+    "question": "这个项目主要解决什么问题？",
+    "expected_keywords": ["graph", "agent", "workflow"]
+  },
+  {
+    "case_id": "demo-02",
+    "question": "如何安装这个仓库？",
+    "expected_keywords": ["install", "pip", "python"]
+  },
+  {
+    "case_id": "demo-03",
+    "question": "README 里怎么描述多 agent 编排？",
+    "expected_keywords": ["agent", "multi", "workflow"]
+  },
+  {
+    "case_id": "demo-04",
+    "question": "最近有哪些 issue 在讨论错误处理？",
+    "expected_keywords": ["issue", "error", "bug"]
+  },
+  {
+    "case_id": "demo-05",
+    "question": "最近的 PR 主要在改什么？",
+    "expected_keywords": ["pr", "pull", "change"]
+  },
+  {
+    "case_id": "demo-06",
+    "question": "如果证据不足，系统应该怎么回答？",
+    "expected_keywords": ["无法", "证据", "确认"]
+  }
+]
+
