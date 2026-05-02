@@ -6,11 +6,10 @@ COPY pyproject.toml README.md LICENSE ./
 COPY src ./src
 COPY docs ./docs
 COPY examples ./examples
-COPY APPLICATION_ANSWER_zh.md ./
+COPY PROJECT_OVERVIEW_zh.md ./
 
 RUN pip install --no-cache-dir .
 
 EXPOSE 8000
 
 CMD ["python", "-m", "mmrag.cli.main", "serve", "--host", "0.0.0.0", "--port", "8000"]
-

@@ -7,7 +7,7 @@ MMRAG 的目标不是做一个泛化聊天机器人，而是做一个可证明 A
 - 能 ingest 多源 GitHub 内容
 - 能把问题拆成多步检索与综合
 - 能在证据不足时拒答
-- 能保存完整 trace 方便录屏、排查和申请举证
+- 能保存完整 trace 方便演示、排查和回溯分析
 
 ## 组件
 
@@ -94,5 +94,4 @@ Router -> Planner -> Retrieve -> Synthesize -> Critic
 - `chat/completions`
 - `embeddings`
 
-即可接入。这样可以直接切换到 MiMo、OpenAI、DeepSeek 或兼容网关。
-
+即可接入。这样可以直接切换到 OpenAI、DeepSeek 或任何兼容网关。

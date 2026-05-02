@@ -93,7 +93,6 @@ mmrag eval run --repo langchain-ai/langgraph --suite demo
 - 有 groundedness pass rate
 - 有 refusal 策略
 
-## 7. 展示申请回答
+## 7. 展示项目介绍
 
-打开 `APPLICATION_ANSWER_zh.md`，说明这个项目已包含可直接提交的项目描述素材。
-
+打开 `PROJECT_OVERVIEW_zh.md`，说明这个项目已经包含一份可直接复用的中文项目介绍。
